@@ -87,6 +87,7 @@ For comparison purposes, we will the below models:
 - **loan_amnt** larger amounts often tends to correlate with higher repayment risk.
 
 **Combined ROC CURVE**
+
 ![alt text](Photos/images/image-3.png)
 
 SUMMARY COMPARISON OF THE TWO MODELS ON THE METRICS USED
