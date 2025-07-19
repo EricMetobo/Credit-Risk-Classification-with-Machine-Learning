@@ -1,6 +1,6 @@
 # Credit-Risk-Classification-with-Machine-Learning
 
-![Alt text](Photos\Credit-Risk.jpg)
+![Alt text](Photos/Credit-Risk.jpg)
 
 ## General objective
 To develop a data-driven credit risk prediction model that classifies loan applicants as either low or high risk, using historical applicant information for financial institutions to use.
@@ -35,7 +35,7 @@ This historical record of loan applicants thats has behavioural, financial habit
 
 ## EXPLORATORY DATA ANALYSIS (EDA)
 ### Features vs Target Relationship
-![alt text](image.png)
+![alt text](Photos/images/image.png)
 
 **a. person_income vs Loan Status**
 - Both risk groups show wide income ranges and have medians being similar and substantial upper-end outliers
@@ -66,7 +66,7 @@ This historical record of loan applicants thats has behavioural, financial habit
 - Low-risk suggests applicants with longer, stable employment history are less likely to default whereas High-risk group indicates that borrowers with short unstable employment records may carry greater risk.
 
 ### Correlation Matrix
-![alt text](image-1.png)
+![alt text](Photos/images/image-1.png)
 - **person_age** and **cb_person_cred_hist_length** show strong positive correlation (0.86) with older individuals generally having longer credit histories therefore variables may be conveying the same signal hence should be dropped or combine to reduce redundancy
 - **loan_percentage_income** and **loan_int_rate** have a moderate positive correlation with **loan_status** hence this features deserve priority in feature selection and may rank highly in importance scores.
 - **loan amount** and **person income** have weak correlation (<0.15) with loan status may not be directly predictive hence need for further exploration.
@@ -78,7 +78,7 @@ For comparison purposes, we will the below models:
 
  **Feature Importance plot**
  
- ![alt text](image-2.png)
+ ![alt text](Photos/images/image-2.png)
  Our model predominantly trusts how the loan is structured and the income related metrics:
 - **loan_grade_encoded** has the strongest signal, indicating that higher loan grades closely translate to creditworthiness
 - **loan_percent_income** measures loan burden in relation to income hence a key stress indicator.
@@ -87,7 +87,7 @@ For comparison purposes, we will the below models:
 - **loan_amnt** larger amounts often tends to correlate with higher repayment risk.
 
 **Combined ROC CURVE**
-![alt text](image-3.png)
+![alt text](Photos/images/image-3.png)
 
 SUMMARY COMPARISON OF THE TWO MODELS ON THE METRICS USED
 
